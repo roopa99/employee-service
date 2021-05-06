@@ -25,7 +25,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -44,11 +43,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <layers>
-                        <enabled>true</enabled>
-                    </layers>
                     <image>
-                        <name>docker.io/njuegitonga/${project.artifactId}:v1</name>
+                       <name>docker.io/njuegitonga/${project.artifactId}:v1</name>
                     </image>
                     <excludes>
                         <exclude>
